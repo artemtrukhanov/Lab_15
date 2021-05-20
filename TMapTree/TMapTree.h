@@ -43,7 +43,7 @@ template<class TK, class TV>
 inline TMapTree<TK, TV>::TMapTree(const TMapTree<TK, TV>& p)
 {
 	count = p.count;
-	if (p.root!- NULL)
+	if (p.root!= NULL)
 	{
 		root = new TNodeTree<TK, TV>(*(p.root));
 		std::queue<TNodeTree<TK, TV>*> q;

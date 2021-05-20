@@ -21,7 +21,7 @@ public:
 template<class TK, class TV>
 inline TMapTreeIterator<TK, TV>::TMapTreeIterator(TMapTree<TK, TV>& _map) : map(_map)
 {
-	if (_map.root != NULL)
+	if (_map.root != nullptr)
 		this->pos.push(_map.root);
 }
 
@@ -30,7 +30,7 @@ inline bool TMapTreeIterator<TK, TV>::GoNext()
 {
 	TNodeTree<TK, TV>* cur = this->pos.front();
 	this->pos.pop();
-	if (cur->l == NULL && cur->r == NULL)
+	if (cur->l == nullptr && cur->r == nullptr)
 		return false;
 	else
 	{
