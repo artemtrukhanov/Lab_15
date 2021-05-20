@@ -1,5 +1,6 @@
 #include <../gtest/gtest.h>
 #include "TMapTree.h"
+#include <vector>
 
 using namespace std;
 
