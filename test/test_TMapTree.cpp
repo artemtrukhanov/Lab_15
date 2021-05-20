@@ -36,20 +36,6 @@ TEST(TMapTree, can_delete_elem)
 	ASSERT_ANY_THROW(a.Find("nice"));
 }
 
-TEST(TTreeMap, can_index_elem)
-{
-	TMapTree<int, double> e;
-	e.Add(2, 2);
-	e.Add(1, 1);
-	e.Add(3, 3);
-	vector<double> v;
-	v.push_back(e[1]);
-	v.push_back(e[3]);
-	v.push_back(e[2]);
-	vector<double> expv = { 1,3,2 };
-	EXPECT_EQ(expv, v);
-}
-
 TEST(TTreeMap, can_iterate_object)
 {
 	TMapTree<string, int> a;
